@@ -190,6 +190,7 @@ a i:hover{
   width:80%;
   text-align:center;
   margin-top:3%;
+  max-width: 1500px;
 }
 
 .welcome p{
@@ -217,7 +218,6 @@ a i:hover{
 
 .mini_info{
   display:flex;
-  
   margin-top:5%;
   margin-bottom:5%;
 }
@@ -233,9 +233,11 @@ a i:hover{
 }
 
 .twenty_nine{
-  padding:1%;
+  padding-left:1%;
   width:29%;
-  background-color:#93C840;
+  line-height: 1.5rem;
+
+/*  background-color:#93C840;*/
 }
 
 .seventy h3{
@@ -303,4 +305,24 @@ h5{
   margin-top:.5rem;
 }
 
+.twenty_nine h3{
+  font-weight:400;
+  color:#93C840;
+  font-size:1.7rem;
+  margin-bottom:.5rem;
+
+}
+
+.twenty_nine p{
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.twenty_nine i{
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.paragraph_space{
+  margin-top:.9rem;
+
+}
 
