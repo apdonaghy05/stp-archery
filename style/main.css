@@ -1,4 +1,9 @@
 *{
+  box-sizing:border-box;
+}
+
+
+*{
   margin:0;
   padding:0;
 }
@@ -24,22 +29,28 @@
   display:block;
 }
 
+.instructor_stretch{
+  background-color:#EEEEEE;
+  margin-top:4%;
+  margin-bottom:6%;
+  padding-top:2.5%;
+  padding-bottom:2%;
+}
+
 .background_stretch_bottom{
    background-color:#CFE1B0;
    padding-top:1.5rem;
-   padding-bottom:1rem;
-   height:7.5rem;
+   height:10rem;
    margin-bottom:0;
    text-align: center;
 }
 
 .background_stretch_copyright{
    background-color:#93C840;
-   padding-top:1rem;
-   padding-bottom:1rem;
-   height:1.5rem;
-   margin-top:2.25rem;
+   padding-top:.75rem;
+   height:3rem;
    margin-bottom:0;
+   margin-top:2rem;
    text-align: center;
  }
 
@@ -187,7 +198,7 @@ a i:hover{
 
 .welcome{
   margin: 0 auto;
-  width:80%;
+  width:75%;
   text-align:center;
   margin-top:3%;
   max-width: 1500px;
@@ -197,7 +208,7 @@ a i:hover{
   margin-top:1%;
   font-size:1.25rem;
   font-weight:300;
-  line-height:1.65rem;
+  line-height:1.75rem;
 }
 
 .welcome span{
@@ -205,21 +216,23 @@ a i:hover{
   color:#54862A;
 }
 
-.welcome h3{
+h2{
   color:white;
   padding:1rem;
   font-weight:400;
   font-size:1.5rem;
   background-color:#FF843A;
-  width:14rem;
+  width:17rem;
   margin:0 auto;
-  border-radius:20px
+  border-radius:20px;
+  text-align: center;
 }
+
 
 .mini_info{
   display:flex;
   margin-top:5%;
-  margin-bottom:5%;
+  margin-bottom:8%;
 }
 
 .seventy{
@@ -229,6 +242,7 @@ a i:hover{
   width:70%;
   margin-right:1%;
   background-color:#EEEEEE;
+  max-height: 15rem;
   
 }
 
@@ -236,8 +250,6 @@ a i:hover{
   padding-left:1%;
   width:29%;
   line-height: 1.5rem;
-
-/*  background-color:#93C840;*/
 }
 
 .seventy h3{
@@ -246,10 +258,11 @@ a i:hover{
 
 .green{
   background-color:#93C840;
-  height:3rem;
+  height:5rem;
   padding:1rem;
   text-align:right;
   border-radius:0 0 0 20px;
+  text-align: center;
 }
 
 .green2{
@@ -270,14 +283,14 @@ a i:hover{
   margin-bottom:.75rem;
 }
 
-.seventy span{
-    height: 5rem;
-    width: 5rem;
+.seventy span {
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     display: inline-block;
-    font-size:2rem;
-    color:white;
-    padding:1.5rem;
+    font-size: 2rem;
+    color: white;
+    padding: 1.25rem;
 }
 
 .seventy div:nth-child(n+1):nth-child(-n+2){
@@ -293,11 +306,6 @@ a i:hover{
   background-color:#FF843A;
 }
 
-.green{
-  background-color:#93C840;
-  text-align: center;
-}
-
 h5{
   font-weight:300;
   font-size:1.35rem;
@@ -305,7 +313,7 @@ h5{
   margin-top:.5rem;
 }
 
-.twenty_nine h3{
+.twenty_nine h4{
   font-weight:400;
   color:#93C840;
   font-size:1.7rem;
@@ -324,5 +332,58 @@ h5{
 .paragraph_space{
   margin-top:.9rem;
 
+}
+
+.instructor img{
+  margin:0 auto;
+  display:block;
+  width:70%;
+  margin-bottom:5%;
+
+}
+
+.about_us h2{
+  margin-top:5%;
+  margin-bottom: 1%;
+  width:10rem;
+}
+
+.about_us p{
+  line-height:1.35rem;
+}
+
+.about_us h3{
+  margin-bottom:1%;
+}
+
+.instructor h3{
+  margin-bottom:1%;
+  color:#248CD4;
+}
+
+
+.instructor p{
+  line-height:1.35rem;
+}
+
+.instructor h2{
+  background-color:#248CD4;
+  margin-bottom:1.5%;
+  width:12rem;
+  
+}
+
+.policy{
+  color:#626262;
+  width:60%;
+  margin-bottom:7%
+}
+
+.policy p{
+  font-size:1rem;
+}
+
+.instructor p{
+   font-size:1rem;
 }
 
