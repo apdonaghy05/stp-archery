@@ -7,7 +7,7 @@
 
     /* Every row is 90% as wide as it's parent, the <body> */
     article.row {
-      width: 90%;
+      width: 92%;
       margin: auto;
       max-width:1600px;
     }
@@ -24,7 +24,7 @@
       beginning with 'col_' */
       section[class^='col_']  {
       float: left;
-      padding: 1rem;
+      padding: 3%;
     }
 
     section.col_1_of_3 {width: 33.3333%;}

@@ -198,17 +198,17 @@ a i:hover{
 
 .welcome{
   margin: 0 auto;
-  width:75%;
+  width:70%;
   text-align:center;
   margin-top:3%;
   max-width: 1500px;
 }
 
 .welcome p{
-  margin-top:1%;
+  margin-top:2%;
   font-size:1.25rem;
   font-weight:300;
-  line-height:1.75rem;
+  line-height:2rem;
 }
 
 .welcome span{
@@ -237,7 +237,6 @@ h2{
 
 .seventy{
   padding:1%;
-  padding-top:2%;
   padding-bottom:2%;
   width:70%;
   margin-right:1%;
@@ -281,6 +280,7 @@ h2{
 .seventy p{
   font-weight:600;
   margin-bottom:.75rem;
+  margin-top:.75rem;
 }
 
 .seventy span {
@@ -342,6 +342,14 @@ h5{
 
 }
 
+.about_us img{
+  margin:0 auto;
+  display:block;
+  width:70%;
+  margin-bottom:5%;
+
+}
+
 .about_us h2{
   margin-top:5%;
   margin-bottom: 1%;
@@ -386,4 +394,26 @@ h5{
 .instructor p{
    font-size:1rem;
 }
+
+@media screen and (max-width:500px){
+header aside{
+    display:none;
+}}
+
+
+
+/*slider Code. I did not write this code. I am using it from W3schools to get my slider to work.*/
+
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
+.w3-display-position{position:absolute}
+.w3-tooltip,.w3-display-container{position:relative}.w3-tooltip .w3-text{display:none}.w3-tooltip:hover .w3-text{display:inline-block}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.mySlides{
+  width:100%;
+}
+
 

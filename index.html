@@ -6,7 +6,8 @@
     <meta name="keywords" content="Straight to the Point Archery, Non Profit, Education, Giap Nguyen">
     <meta name="author" content="Andrew Donaghy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -18,7 +19,9 @@
     <div class="background_stretch_top">
       <header>
       <div class="container">  
-        <a class="float_left" href="index.html"><img src="images/logo.png" alt="Straight to the Point Archery Logo"></a>
+        <a class="float_left" href="index.html">
+          <img src="images/logo.png" alt="Straight to the Point Archery Logo">
+        </a>
         <aside class="address float_right">
           <p><i class="fas fa-map-marker"></i><b> 528 Nock Point Ln</b></p> 
           <p><b>Tacoma, WA 98412</b></p> 
@@ -47,8 +50,16 @@
     </div>
     <main class="clear">
 <!--    slider-->
-      <img class ="container clear slider" src="images/slider_1.jpg">
+<!--      <img class ="container slider" src="images/slider_1.jpg">-->
 
+      <div class ="w3-display-container container slider">
+        <img class="mySlides" src="images/slider_1.jpg" alt="archery_image">
+        <img class="mySlides" src="images/slider_2.jpg" alt="archery_image">
+        <img class="mySlides" src="images/slider_3.jpg" alt="archery_image">
+        
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
       
       <section class="welcome">
         <h2>Welcome Archers!</h2>
@@ -58,36 +69,32 @@
       
       
       <div class="container mini_info">
-      
-        
-      <h3 class="green">This Week</h3>
-      <section class="seventy flex">
-        
-      <div class="thirty"><p>Basic <br>Archery</p><span class="blue">May<br>7th</span> <h5>4–5p.m.</h5></div>
-      <div class="thirty"><p>Intermediate<br>Archery</p><span class="orange">May<br>8th</span><h5>4–5p.m.</h5></div>
-      <div class="thirty"><p>Advanced<br>Archery</p><span class="green">May<br>10th</span><h5>5–6p.m.</h5></div>
-        
-
-      </section>
-      
-        
+        <h3 class="green">This Week</h3>
+        <section class="seventy flex">
+          <div class="thirty">
+            <p>Basic <br>Archery</p><span class="blue">May<br>7th</span><h5>4–5p.m.</h5>
+          </div>
+          <div class="thirty">
+            <p>Intermediate<br>Archery</p><span class="orange">May<br>8th</span><h5>4–5p.m.</h5>
+          </div>
+          <div class="thirty">
+            <p>Advanced<br>Archery</p><span class="green">May<br>10th</span><h5>5–6p.m.</h5>
+          </div>
+        </section>
         <section class="twenty_nine">
-        <h4>Classes</h4>
-        <p><b>A101</b> Basic Archery <i>$120/month</i></p>
-        <p><b>A102</b> Intermediate Archery <i>$120/month</i></p>
-        <p><b>A103</b> Advanced Archery <i>$120/month</i></p>
-        <div class="paragraph_space"><h4>Private lessons</h4>
-        <p><b>A101</b> Basic Archery <i>$120/month</i></p>
-        <p><b>A102</b> Intermediate Archery <i>$120/month</i></p>
-        <p><b>A103</b> Advanced Archery <i>$120/month</i></p>
-       </div>
+          <h4>Classes</h4>
+          <p><b>A101</b> Basic Archery <i>$120/month</i></p>
+          <p><b>A102</b> Intermediate Archery <i>$120/month</i></p>
+          <p><b>A103</b> Advanced Archery <i>$120/month</i></p>
+          <div class="paragraph_space"><h4>Private lessons</h4>
+            <p><b>A101</b> Basic Archery <i>$120/month</i></p>
+            <p><b>A102</b> Intermediate Archery <i>$120/month</i></p>
+            <p><b>A103</b> Advanced Archery <i>$120/month</i></p>
+          </div>
         </section>
       </div>
 
-          
-
-     
-    </main>
+  </main>
     <div class="background_stretch_bottom">
       <footer class="container">
         <nav>
@@ -110,14 +117,34 @@
        <a href="#"><i class="fab fa-twitter"></i></a> 
        <a href="#"><i class="fab fa-facebook"></i></a> 
      </div>
-      
       </footer>
-          <div class="background_stretch_copyright">
-            <div class="copyright">
-              <i class="fas fa-copyright"></i>
-              <p>Straight to the Point Archery</p>
-            </div>
+        <div class="background_stretch_copyright">
+          <div class="copyright">
+            <i class="fas fa-copyright"></i>
+            <p>Straight to the Point Archery</p>
           </div>
+        </div>
     </div>
+    
+    <!--I did not write this script script by w3 schools  -->
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
   </body>
 </html>
